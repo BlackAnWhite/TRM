@@ -1,0 +1,36 @@
+html,body{
+  box-sizing: border-box;
+}
+a:hover{
+  color: #00629e;
+}
+.color-e87717{
+  color: #e87717;
+}
+/*index-top*/
+.header{
+  width: 100%;
+}
+.header .hd-top{
+  width: 100%;
+  height: 30px;
+  background: #eeeeee;
+}
+.header .hd-top p{
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 30px;
+  color: #333;
+  font-size: 12px;
+}
+.header .hd-top p i{
+  font-style: normal;
+  cursor: pointer;
+}
+.header .hd-top p .hd-top-sc{
+  float: right;
+}
+.header .hd-top p .hd-top-sc i:hover{
+  color: #e87717 !important;
+}
+/*index-top end*/
