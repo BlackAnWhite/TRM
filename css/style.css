@@ -340,7 +340,7 @@ a:hover {
 .con-f1 .f1-r .f1-r-top {
   width: 240px;
   height: 230px;
-  background: #e5e5e5;
+  background: #eee;
   padding-top: 20px;
 }
 
@@ -442,7 +442,7 @@ a:hover {
 
 .con-f2 {
   width: 100%;
-  background: #e5e5e5;
+  background: #eee;
   padding: 20px 0;
 }
 
@@ -469,7 +469,7 @@ a:hover {
   position: relative;
 }
 
-.con-f2 ul li .f2-imgbox .f2-sign{
+.con-f2 ul li .f2-imgbox .f2-sign {
   width: 84px;
   height: 30px;
   line-height: 30px;
@@ -481,190 +481,277 @@ a:hover {
   left: 24px;
   top: 24px;
 }
-.con-f2 ul li .f2-list{
+
+.con-f2 ul li .f2-list {
   width: 100%;
   margin-top: 20px;
 }
-.con-f2 ul li .f2-list p{
+
+.con-f2 ul li .f2-list p {
   width: 100%;
   height: 26px;
   line-height: 26px;
 }
-.con-f2 ul li .f2-list p a{
+
+.con-f2 ul li .f2-list p a {
   display: block;
   width: 100%;
   font-size: 14px;
   color: #666;
 }
 
-.con-f2 ul li .f2-list p a span{
+.con-f2 ul li .f2-list p a span {
   display: inline-block;
   width: 70%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.con-f2 ul li .f2-list p a i{
+
+.con-f2 ul li .f2-list p a i {
   font-style: normal;
   float: right;
   font-size: 12px;
   color: #999;
 }
-.con-f2 ul li .f2-list p a:hover{
+
+.con-f2 ul li .f2-list p a:hover {
   color: #00629e;
 }
+
 /*f2 end*/
 
+/*f3*/
+
+.con-f3 {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.con-f3 .f3-list {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.con-f3 .f3-list ul li {
+  width: 580px;
+  height: 150px;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.con-f3 .f3-list ul li:nth-child(even) {
+  margin-right: 0;
+}
+
+.con-f3 .f3-list ul li .f3-imgbox {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 1px solid #ffa800;
+}
+
+.con-f3 .f3-list ul li .f3-txtbox {
+  width: 430px;
+  height: 150px;
+  padding: 10px;
+  background: #eee;
+}
+
+.con-f3 .f3-list ul li .f3-txtbox h3 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #333;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.con-f3 .f3-list ul li .f3-txtbox p {
+  width: 100%;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.con-f3 .f3-list ul li:hover .f3-txtbox {
+  background: #84bbf4;
+  color: #fff !important;
+}
+
+/*f3 end*/
+
+/*f4*/
+
+.con-f4 {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.con-f4 .f4-left {
+  width: 500px;
+}
+
+.con-f4 .f4-left .f4l-box {
+  width: 100%;
+  margin-top: 20px;
+  height: 380px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+.f4lb-left {
+  width: 60%;
+  height: 100%;
+}
+
+.f4lb-left ul {
+  width: 100%;
+  height: 100%;
+}
+
+.f4lb-left ul li {
+  width: 50%;
+  height: 50%;
+  float: left;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.f4lb-left ul li .f4-iconbox {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 35px 35px 25px 35px;
+}
+
+.f4lb-left ul li p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.f4lb-right {
+  width: 40%;
+  height: 100%;
+}
+
+.f4lb-right ul {
+  width: 100%;
+  height: 100%;
+}
+
+.f4lb-right ul li {
+  width: 100%;
+  height: 33.3333333%;
+  border-bottom: 1px solid #ccc;
+}
+
+.f4lb-right ul li .f4-iconbox {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px 60px;
+}
+
+.f4lb-right ul li p {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+.con-f4 .f4-right {
+  width: 670px;
+}
+
+.con-f4 .f4-right .f4r-box {
+  width: 100%;
+  height: 380px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+/*f4 slide*/
+
+.f4r-box{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.f4r-box{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.f4r-box ul {
+  overflow: hidden;
+  zoom: 1;
+  width: 668px;
+  height: 378px;
+  float: left;
+  _display: inline;
+  padding: 24px;
+}
+
+.f4r-box ul li {
+  width: 300px;
+  height: 150px;
+  float: left;
+  _display: inline;
+  overflow: hidden;
+  text-align: center;
+  overflow: hidden;
+}
+
+.f4r-box ul li:nth-child(1) {
+  margin-bottom: 30px;
+}
+.f4r-box ul li:nth-child(2) {
+  margin-bottom: 30px;
+}
+.f4r-box ul li:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.f4r-box ul li .photobox {
+  width: 110px;
+  height: 150px;
+}
+.f4r-box ul li .txtbox{
+  width:190px;
+  height: 150px;
+  padding-left: 10px;
+}
+.f4r-box ul li .txtbox h3{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #f9980d;
+  text-align: left;
+}
+.f4r-box ul li .txtbox p{
+  font-size: 14px;
+  color: #528afa;
+  text-align: left;
+  line-height: 26px;
+}
+
+/*f4 end*/
+
 /*continer end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*all end*/
