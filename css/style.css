@@ -1,5 +1,6 @@
 html, body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a:hover {
@@ -32,7 +33,31 @@ a:hover {
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
-
+/*遮罩层*/
+.blackbg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6) !important;
+  filter: alpha(opacity=40) !important;
+  position: fixed !important;
+  top: 0;
+  z-index: -10;
+  opacity: 0;
+}
+/*video box*/
+.showVideo{
+  width: 800px;
+  height: 600px;
+  position: fixed !important;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -400px;
+  -webkit-box-shadow: 0 0 20px #666;
+          box-shadow: 0 0 20px #666;
+  border-radius: 8px;
+  z-index: 999999;
+}
 /*index-top*/
 
 .header {
@@ -230,7 +255,7 @@ a:hover {
 }
 
 .con-f1 .f1-m .banner {
-  width：100%;
+  width: 100%;
   height: 300px;
   margin: 10px 0;
 }
@@ -258,8 +283,6 @@ a:hover {
   display: inline-block;
   width: 10px;
   height: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   background: #333;
   text-indent: -9999px;
@@ -392,7 +415,7 @@ a:hover {
 
 .tab-hd li.active {
   background: #fff;
-  color：#00629e；
+  color: #00629e;
 }
 
 .tab-bd li {
@@ -576,7 +599,8 @@ a:hover {
   font-size: 14px;
 }
 
-.con-f3 .f3-list ul li:hover .f3-txtbox {
+.con-f3 .f3-list ul li:hover .f3-txtbox,
+.con-f3 .f3-list ul li:hover .f3-txtbox h3{
   background: #84bbf4;
   color: #fff !important;
 }
@@ -683,14 +707,14 @@ a:hover {
 
 /*f4 slide*/
 
-.f4r-box{
+.f4r-box {
   overflow: hidden;
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.f4r-box{
+.f4r-box {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -719,9 +743,11 @@ a:hover {
 .f4r-box ul li:nth-child(1) {
   margin-bottom: 30px;
 }
+
 .f4r-box ul li:nth-child(2) {
   margin-bottom: 30px;
 }
+
 .f4r-box ul li:nth-child(odd) {
   margin-right: 20px;
 }
@@ -730,12 +756,14 @@ a:hover {
   width: 110px;
   height: 150px;
 }
-.f4r-box ul li .txtbox{
-  width:190px;
+
+.f4r-box ul li .txtbox {
+  width: 190px;
   height: 150px;
   padding-left: 10px;
 }
-.f4r-box ul li .txtbox h3{
+
+.f4r-box ul li .txtbox h3 {
   width: 100%;
   height: 40px;
   line-height: 40px;
@@ -743,7 +771,8 @@ a:hover {
   color: #f9980d;
   text-align: left;
 }
-.f4r-box ul li .txtbox p{
+
+.f4r-box ul li .txtbox p {
   font-size: 14px;
   color: #528afa;
   text-align: left;
@@ -752,6 +781,87 @@ a:hover {
 
 /*f4 end*/
 
-/*continer end*/
+/*f5 视频讲堂*/
 
-/*all end*/
+.con-f5 {
+  width:100%;
+}
+
+.con-f5 ul {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.con-f5 ul li {
+  width: 280px;
+  height: 260px;
+  float: left;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.con-f5 ul li:last-child {
+  margin-right: 0;
+}
+
+.con-f5 ul li .f5-picbox {
+  width: 100%;
+  height: 220px;
+}
+
+.con-f5 ul li .f5-picbox img {
+  width: 84px;
+  margin: auto;
+  padding-top: 68px;
+  display: block;
+}
+
+.con-f5 ul li p {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  font-size: 16px;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*f5 视频讲堂 end*/
+/*f6 友情链接 */
+.con-f6{
+  width: 100%;
+}
+.con-f6 p{
+  width: 100%;
+  height: auto;
+  margin:20px 0;
+}
+.con-f6 p a{
+  display: inline-block;
+  margin-right: 20px;
+  color: #00629e;
+  font-size: 14px;
+}
+/*f6 友情链接 end*/
+
+/*continer end*/
+.footer{
+  width: 100%;
+  height: 130px;
+  padding: 20px 0;
+  background: #333;
+}
+.footer p{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.footer p a{
+  color: #fff;
+}

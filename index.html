@@ -16,6 +16,7 @@
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
   <script src="js/TouchSlide.1.1.js"></script>
   <script src="js/swiper-3.4.2.min.js"></script>
+  <script src="js/ckplayer.js"></script>
 
 
   <!-- <script type="text/javascript" src="js/my.js"></script> -->
@@ -658,29 +659,92 @@
     <!-- f5 -->
     <div class="con-f5">
       <div class="w1200">
+        <div class="f-tit">
+          科技讲堂
+          <span class="fr"><a href="#">更多&gt;&gt;</a></span>
+        </div>
         <ul class="clearfix ">
-          <li>
-
-            
+          <li class="videobox" data-src='http://ckplayer-video.oss-cn-shanghai.aliyuncs.com/ckplayer-sample/mydream_zh_768-432.mp4'>
+            <div class="f5-picbox autoimg" data-src='images/f5-img1.png'>
+              <img src="images/btn-play.png" alt="">
+            </div>
+            <p>陶英 企业税务风险分析评估与应对 </p>
+          </li>
+          <li class="videobox" data-src='http://ckplayer-video.oss-cn-shanghai.aliyuncs.com/ckplayer-sample/mydream_zh_768-432.mp4'>
+            <div class="f5-picbox autoimg" data-src='images/f5-img1.png'>
+              <img src="images/btn-play.png" alt="">
+            </div>
+            <p>陶英 企业税务风险分析评估与应对 </p>
+          </li>
+          <li class="videobox" data-src='http://ckplayer-video.oss-cn-shanghai.aliyuncs.com/ckplayer-sample/mydream_zh_768-432.mp4'>
+            <div class="f5-picbox autoimg" data-src='images/f5-img1.png'>
+              <img src="images/btn-play.png" alt="">
+            </div>
+            <p>陶英 企业税务风险分析评估与应对 </p>
+          </li>
+          <li class="videobox" data-src='http://ckplayer-video.oss-cn-shanghai.aliyuncs.com/ckplayer-sample/mydream_zh_768-432.mp4'>
+            <div class="f5-picbox autoimg" data-src='images/f5-img1.png'>
+              <img src="images/btn-play.png" alt="">
+            </div>
+            <p>陶英 企业税务风险分析评估与应对 </p>
           </li>
         </ul>
       </div>
     </div>
+    <div class="showVideo dn">
+      <!-- 视频盒子 -->
+    </div>
+    <div class="blackbg">
+      <!-- 遮罩层 -->
+    </div>
     <!-- f5 end -->
-  </div>
+    <!-- f6 友情链接 -->
+    <div class="con-f6">
+      <div class="w1200">
+        <div class="f-tit">
+          友情链接
 
+        </div>
+        <p>
+          <a href="#">三门峡市政府</a>
+          <a href="#">三门峡市科技局</a>
+          <a href="#">三门峡产业集聚区</a>
+          <a href="#">西安科技的市场</a>
+        </p>
+      </div>
+    </div>
+    <!-- f6 友情链接 end-->
+
+  </div>
+    <!-- continer end -->
+    <!-- footer -->
   <div class="footer">
+    <div class="w1200">
+      <p>主办：三门峡高新技术产业开发区管理委员会 地址：三门峡高新技术产业开发区创业中心大楼东裙楼二楼</p>
+      <p>大市场服务热线：0398-2751855　传真：0398-2751855　邮箱：smxtrm@126.com</p>
+      <p>三门峡科技大市场 © 2017 All Rights Reserved 豫ICP 备<a href="#">16025675</a>号 技术支持：<a href="http://www.hohu.com.cn">宏略科技</a></p>
+    </div>
+  </div>
+
+  <!-- 登录框 -->
+  <div class="loginbox">
 
   </div>
+
+  <!-- 注册框 -->
+  <div class="regbox">
+
+  </div>
+
 </body>
+<script src="js/showVideo.js"></script>
+
 <script>
   $(function() {
     $('.autoimg').each(function(index, item) {
-      // console.log(index);
       $(this).css("background-image", 'url(' + $(this).data('src') + ')');
-    })
-
-  })
+    });
+  });
 </script>
 
 </html>
