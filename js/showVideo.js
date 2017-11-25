@@ -1,4 +1,9 @@
-
+/*
+ *视频播放 依赖ckplayer.js
+ *视频容器 .showVideo
+ *遮罩层 .blackbg
+ *封面图片
+ */
 $(function() {
   var player = null, //播放器对象
     mask = $('.blackbg'), //遮罩
@@ -30,4 +35,44 @@ $(function() {
       });
     });
   });
+});
+
+/*
+ *弹出登录、注册、修改密码
+ *登录 showLog()
+ *注册 showReg()
+ *修改密码 showChange()
+ *关闭按钮 closeAll()
+ */
+$(function() {
+  var logbox = $('.loginbox');
+  var regbox = $('.regbox');
+  var forgetbox = $('.forgetbox');
+  var closebtn = $('.close-btn');
+  var blackbg = $('.blackbg');
+
+  window.showLog = function() {
+    logbox.fadeIn();
+    blackbg.css({'opacity': '1', 'zIndex': '9999'});
+    regbox.fadeOut();
+    forgetbox.fadeOut();
+  };
+  window.showReg = function() {
+    regbox.fadeIn();
+    blackbg.css({'opacity': '1', 'zIndex': '99999'});
+    logbox.fadeOut();
+    forgetbox.fadeOut();
+  };
+  window.showChange = function() {
+    forgetbox.fadeIn();
+    blackbg.css({'opacity': '1', 'zIndex': '99999'});
+    logbox.fadeOut();
+    regbox.fadeOut();
+  };
+  window.closeAll = function() {
+    logbox.fadeOut();
+    regbox.fadeOut();
+    forgetbox.fadeOut();
+    blackbg.css({'opacity': '0', 'zIndex': '-1'});
+  };
 });

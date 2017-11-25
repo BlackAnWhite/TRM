@@ -37,8 +37,8 @@ a:hover {
 .blackbg {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .6) !important;
-  filter: alpha(opacity=40) !important;
+  background: rgba(0, 0, 0, .9) !important;
+  filter: alpha(opacity=90) !important;
   position: fixed !important;
   top: 0;
   z-index: -10;
@@ -385,6 +385,10 @@ a:hover {
   font-size: 14px;
   margin: 15px auto 0;
   cursor: pointer;
+}
+
+.f1-logbtn a, .f1-regbtn a{
+  color: #fff;
 }
 
 .con-f1 .f1-r .f1-r-bot {
@@ -864,4 +868,111 @@ a:hover {
 }
 .footer p a{
   color: #fff;
+}
+
+/*登录注册*/
+.loginbox , .regbox , .forgetbox{
+  position:fixed;
+  width: 400px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -200px;
+  background: #fff;
+  box-shadow: 0 0 20px #666;
+  z-index: 9999989;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.form-hd{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #00629e;
+  position: relative;
+}
+.form-hd .log-logo{
+  width: 100%;
+  height: 100%;
+}
+.form-hd .log-logo img{
+  height:100%;
+  display:inline-block;
+}
+.form-hd .log-logo span{
+  display: inline-block;
+  height: 60px;
+  line-height:60px;
+  margin-left:40px;
+  color:#00629e;
+  font-size:18px;
+  font-weight: 600;
+}
+.form-hd .close-btn{
+  position:absolute;
+  right: 0;
+  top: 5px;
+  font-size: 30px;
+  color: #999;
+  cursor: pointer;
+}
+.form-bd {
+  width: 100%;
+  padding: 0 10px;
+}
+.form-bd .inputbox{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+.form-bd .inputbox input{
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.form-bd .form-btn{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  background: #00629e;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 20px;
+}
+.form-bd p{
+  margin-top: 15px;
+}
+.form-bd p span{
+  color: #1785f7;
+  font-size: 14px;
+  cursor: pointer;
+}
+.form-bd .selectbox{
+  width: 100%;
+  margin-top: 10px;
+}
+.form-bd .selectbox select,.form-bd .selectbox input{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.regbox{
+  height: 600px;
+  margin-top: -300px;
+}
+.regbox .form-bd .inputbox {
+  margin-top: 10px;
+}
+.forgetbox{
+  height: 460px;
+  margin-top: -230px;
 }
