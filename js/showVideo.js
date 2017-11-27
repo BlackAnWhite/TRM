@@ -53,7 +53,7 @@ $(function() {
 
   window.showLog = function() {
     logbox.fadeIn();
-    blackbg.css({'opacity': '1', 'zIndex': '9999'});
+    blackbg.css({'opacity': '1', 'zIndex': '99999'});
     regbox.fadeOut();
     forgetbox.fadeOut();
   };
