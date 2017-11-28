@@ -731,12 +731,6 @@ a:hover {
   height: 100%;
 }
 
-.f4r-box {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
 .f4r-box ul {
   overflow: hidden;
   zoom: 1;
@@ -1210,7 +1204,65 @@ a:hover {
   margin: 0 auto;
   font-size: 14px;
 }
-
+/*左侧导航*/
+.aside-nav{
+  width: 100%;
+}
+.aside-nav h3{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #3b83bd;
+  color: #fff;
+  font-size: 24px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.aside-nav .aside-contact{
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-top: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.aside-nav .aside-contact p{
+  line-height: 24px;
+  font-size: 14px;
+}
+.aside-map{
+  width: 100%;
+  height: 220px;
+  margin-bottom: 20px;
+}
+#allmap{
+  width: 100%;
+  height: 220px;
+}
+.aside-nav ul{
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-top: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.aside-nav ul li{
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 5px;
+}
+.aside-nav ul li:hover,
+.aside-nav ul li.active{
+  background: #e87717;
+}
+.aside-nav ul li.active a,
+.aside-nav ul li:hover a{
+  color: #fff !important;
+}
 /*视频列表页*/
 .aside-l-videobox{
   width: 100%;
@@ -1256,20 +1308,208 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/*图文新闻列表*/
+.aside-l-newslist{
+  width: 100%;
+}
+.aside-l-newslist ul {
+  width: 100%;
+  height: auto;
+}
+.aside-l-newslist ul li{
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.aside-l-newslist ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.aside-l-newslist ul li .newslist-picbox{
+  width: 160px;
+  height: 160px;
+}
+.aside-l-newslist ul li .newslist-txt{
+  width: 700px;
+  height: 100%;
+  padding: 10px;
+  background: #f3f3f3;
+}
+.aside-l-newslist ul li:hover .newslist-txt{
+  background: #3b83bd;
+}
+.aside-l-newslist ul li:hover a .newslist-txt h3,
+.aside-l-newslist ul li:hover a .newslist-txt span,
+.aside-l-newslist ul li:hover a .newslist-txt p{
+  color: #fff !important;
+}
+
+.aside-l-newslist ul li .newslist-txt h3{
+  font-size: 20px;
+  color: #00629e;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.aside-l-newslist ul li .newslist-txt p{
+  height: 72px;
+  line-height: 24px;
+  overflow: hidden;
+  text-indent: 2em;
+  font-size: 14px;
+}
+.aside-l-newslist ul li .newslist-txt span{
+  display: block;
+  line-height: 30px;
+  font-size: 12px;
+  color: #999;
+}
+/*新闻详情页*/
+.aside-l-newsinfo{
+  width: 100%;
+  height: auto;
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.aside-l-newsinfo .newsinfo-tit{
+  width: 100%;
+  height: auto;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.aside-l-newsinfo .newsinfo-tit h3{
+  width: 100%;
+  height: auto;
+  line-height: 36px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  padding: 0 20px;
+}
+.aside-l-newsinfo .newsinfo-tit p{
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+.aside-l-newsinfo .newsinfo-tit p span{
+  margin-right: 40px;
+}
+.aside-l-newsinfo .newsinfo-con img{
+  max-width: 100%;
+}
+
+/*人才列表*/
+.people-list {
+  width: 100%;
+}
+
+.people-list ul {
+  width: 100%;
+  height: auto;
+}
+
+.people-list ul li {
+  width: 360px;
+  height: 150px;
+  float: left;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.people-list ul li:nth-child(2n) {
+  margin-right: 0;
+}
 
 
+.people-list ul li .photobox {
+  width: 110px;
+  height: 150px;
+}
 
+.people-list ul li .txtbox {
+  width: 250px;
+  height: 150px;
+  padding: 0 10px;
+  background: #eee;
+}
 
+.people-list ul li .txtbox h3 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #f9980d;
+  text-align: left;
+}
 
+.people-list ul li .txtbox p {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  line-height: 26px;
+}
+/*人才详情*/
+.peopleinfo{
+  width: 100%;
+  padding: 20px 0;
+  padding-left: 20px;
+  background: #eee;
+}
+.peopleinfo .people-hd{
+  width: 100%;
+  height: 150px;
+}
+.peopleinfo .people-hd .people-hdl{
+  width: 110px;
+  height: 150px;
+  overflow: hidden;
+}
+.peopleinfo .people-hd .people-hdr{
+  width: 730px;
+  height: auto;
+  padding:0 15px ;
+}
+.peopleinfo .people-hd .people-hdr ul{
+  width: 100%;
+  height: 100%;
+}
+.peopleinfo .people-hd .people-hdr ul li{
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  overflow: hidden;
+}
+.peopleinfo .people-hd .people-hdr ul li:last-child{
+  width: 100%;
+}
+.peopleinfo .people-hd .people-hdr ul li span{
+  margin-left: 10px;
+}
+.peopleinfo .people-bd{
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-
+.peopleinfo .people-bd p{
+  line-height: 32px;
+}
+.peopleinfo .people-bd h3{
+  width: 100%;
+  font-size: 20px;
+  color: #00629e;
+  line-height: 40px;
+}
 
 
 
