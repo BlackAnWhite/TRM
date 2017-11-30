@@ -63,8 +63,15 @@ a:hover {
 .page a{display:inline-block; height:28px; line-height:28px; padding:0 12px; margin:0 3px; border:1px solid #ccc;margin-right:5px;}
 .page a:hover{border:1px solid #00629e; background-color:#00629e; color:#fff;}
 .page-on{border:1px solid #00629e !important; background-color:#00629e; color:#fff;}
-/*index-top*/
 
+/*biaoge*/
+.bg--gray {
+  background-color: #F5F5F5;
+}
+
+
+
+/*index-top*/
 .header {
   width: 100%;
 }
@@ -1511,8 +1518,75 @@ a:hover {
   line-height: 40px;
 }
 
+/*仪器设备表格*/
+.tablebox{
+  width: 100%;
+}
+.tablebox .table {
+  width: 100%;
+  margin-bottom: 5px;
+  border-collapse: collapse;
+  border: none;
+}
+.tablebox .table .table-header {
+  font-size: 16px;
+  height: 50px;
+  color: #005bac;
+}
+.tablebox .table .mach-img {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
 
+.tablebox .table tr td {
+  border: solid #ddd 1px;
+  height: 40px;
+  padding: 5px 10px;
+}
 
+/*个人中心修改密码*/
+.changepwd{
+  width: 400px;
+  margin: 0 auto;
+}
+.changepwd .inputbox{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+.changepwd .inputbox input{
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.changepwd .form-btn{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  background: #00629e;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 20px;
+}
+.changepwd .selectbox{
+  width: 100%;
+  margin-top: 10px;
+}
+.changepwd .selectbox select,.changepwd .selectbox input{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 10px;
+}
 
 
 
