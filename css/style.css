@@ -1545,6 +1545,47 @@ a:hover {
   height: 40px;
   padding: 5px 10px;
 }
+.tablebox textarea{
+  width: 100%;
+  line-height: 24px;
+  font-size: 14px;
+  min-height: 200px;
+  height: auto;
+}
+.yuyue-btn{
+  width: 150px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  background: #e87717;
+  color: #fff;
+  text-align: center;
+  margin: 20px auto;
+}
+.yuyue-btn a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.submit-yuyue{
+  width: 150px;
+  height: 36px;
+  display: block;
+  margin: 20px auto;
+  line-height: 36px;
+  background: #e87717;
+  color: #fff;
+}
+
+.bgblue{
+  background: #3782c7;
+  color: #fff !important;
+}
+.bgdanblue{
+  background: #83accd;
+  color: #fff;
+}
 
 /*个人中心修改密码*/
 .changepwd{
