@@ -15,7 +15,9 @@ a:hover {
 .color-e87717 {
   color: #e87717;
 }
-
+td{
+  line-height: 1.2;
+}
 .bg-4fd3c5 {
   background: #4fd3c5 url(../images/icon-fast1.png) no-repeat center 24px;
 }
@@ -1554,6 +1556,7 @@ a:hover {
   height: auto;
 }
 .yuyue-btn{
+  display: block;
   width: 150px;
   height: 36px;
   line-height: 36px;
