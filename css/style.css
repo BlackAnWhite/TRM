@@ -1546,6 +1546,7 @@ td{
 .tablebox .table tr td {
   border: solid #ddd 1px;
   height: 40px;
+  line-height: 1.5;
   padding: 5px 10px;
 }
 .tablebox textarea{
@@ -1632,7 +1633,45 @@ td{
   border-radius: 3px;
   margin-top: 10px;
 }
-
+/*首页平台入口无缝轮播*/
+.scrollleft {
+	width:100%;
+	padding:5px 20px 0px 20px;
+	margin:20px auto;
+}
+.scrollleft li {
+	float:left;
+	margin-right:7px;
+	display:inline;
+	width:395px;
+	text-align:center;
+	line-height:19px
+}
+.scrollleft img {
+	width:395px;
+	height:100px;
+	padding:10px;
+	border:solid 1px #ddd;
+}
+/* scrolltop */
+.scrolltop {
+	width:158px;
+	height:438px;
+	overflow:hidden;
+	margin:20px auto;
+}
+.scrolltop li {
+	height:156px;
+	overflow:hidden;
+	text-align:center;
+	line-height:19px
+}
+.scrolltop img {
+	width:136px;
+	height:100px;
+	padding:10px;
+	border:solid 1px #ddd;
+}
 
 
 

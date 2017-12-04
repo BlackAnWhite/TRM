@@ -58,15 +58,16 @@
             <li>
               <a href="#">创新讲堂</a>
             </li>
+
             <li>
-              <a href="#">专利交易</a>
-            </li>
-            <li>
-              <a href="#">技术交易</a>
+              <a href="#">技术转移</a>
               <ul>
-                <li><a href="#">科技成果交易</a></li>
-                <li><a href="#">合同认证交易</a></li>
-                <li><a href="#">可拓展...</a></li>
+                <li><a href="#">合同认证登记</a></li>
+                <li><a href="#">科技成果发布</a></li>
+                <li><a href="#">科技成果需求</a></li>
+                <li><a href="#">技术经理人协会</a></li>
+                <li><a href="#">专利交易</a></li>
+
               </ul>
             </li>
             <li>
@@ -358,6 +359,133 @@
 
     </div>
     <!-- f2 end -->
+
+    <!-- 平台入口无缝轮播 -->
+    <div class="w1200">
+      <div class="scrollleft" style="overflow: hidden; position: relative;">
+        <ul style="margin: 0px; padding: 0px; overflow: hidden; position: relative; list-style: none; width: 1485px; left: -155px;">
+          <li style="position: relative; overflow: hidden; float: left;">
+            <a href="http://app.hnkjt.gov.cn/web/index.do" target="_blank">
+              <img width="375" height="80" src="images/ptrk-1.png">
+            </a>
+            <span>河南省财政科研经费管理平台</span>
+          </li>
+          <li style="position: relative; overflow: hidden; float: left;">
+            <a href="http://www.innofund.gov.cn" target="_blank">
+              <img width="375" height="80" src="images/ptrk-2.png">
+            </a>
+            <span>国家科技型中小企业评价网站</span>
+          </li>
+          <li style="position: relative; overflow: hidden; float: left;">
+            <a target="_blank" href="http://sso.hnkjt.gov.cn/SSO/login.jsp?go=http%3A%2F%2Fzxqy.hnkjt.gov.cn%2Fcomm%2Fmain.jsp%3Fct%3D83241e9a-9e4f-4be3-aaba-70fd41558429">
+              <img width="375" height="80" src="images/ptrk-3.png">
+            </a>
+            <span>河南科技型中小企业备案管理系统</span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $(".scrollleft").imgscroll({
+          speed: 40, //图片滚动速度
+          amount: 0, //图片滚动过渡时间
+          width: 1, //图片滚动步数
+          dir: "left" // "left" 或 "up" 向左或向上滚动
+        });
+
+        $(".scrolltop").imgscroll({
+          speed: 40, //图片滚动速度
+          amount: 0, //图片滚动过渡时间
+          width: 1, //图片滚动步数
+          dir: "up" // "left" 或 "up" 向左或向上滚动
+        });
+
+      });
+    </script>
+    <script>
+      $.fn.imgscroll = function(o) {
+        var defaults = {
+          speed: 40,
+          amount: 0,
+          width: 1,
+          dir: "left"
+        };
+        o = $.extend(defaults, o);
+
+        return this.each(function() {
+          var _li = $("li", this);
+          _li.parent().parent().css({
+            overflow: "hidden",
+            position: "relative"
+          }); //div
+          _li.parent().css({
+            margin: "0",
+            padding: "0",
+            overflow: "hidden",
+            position: "relative",
+            "list-style": "none"
+          }); //ul
+          _li.css({
+            position: "relative",
+            overflow: "hidden"
+          }); //li
+          if (o.dir == "left") _li.css({
+            float: "left"
+          });
+
+          //初始大小
+          var _li_size = 0;
+          for (var i = 0; i < _li.size(); i++)
+            _li_size += o.dir == "left" ? _li.eq(i).outerWidth(true) : _li.eq(i).outerHeight(true);
+
+          //循环所需要的元素
+          if (o.dir == "left") _li.parent().css({
+            width: (_li_size * 3) + "px"
+          });
+          _li.parent().empty().append(_li.clone()).append(_li.clone()).append(_li.clone());
+          _li = $("li", this);
+
+          //滚动
+          var _li_scroll = 0;
+
+          function goto() {
+            _li_scroll += o.width;
+            if (_li_scroll > _li_size) {
+              _li_scroll = 0;
+              _li.parent().css(o.dir == "left" ? {
+                left: -_li_scroll
+              } : {
+                top: -_li_scroll
+              });
+              _li_scroll += o.width;
+            }
+            _li.parent().animate(o.dir == "left" ? {
+              left: -_li_scroll
+            } : {
+              top: -_li_scroll
+            }, o.amount);
+          }
+
+          //开始
+          var move = setInterval(function() {
+            goto();
+          }, o.speed);
+          _li.parent().hover(function() {
+            clearInterval(move);
+          }, function() {
+            clearInterval(move);
+            move = setInterval(function() {
+              goto();
+            }, o.speed);
+          });
+        });
+      };
+    </script>
+    <!-- 平台入口无缝轮播 end-->
     <!-- f3 -->
 
     <div class="con-f3">
@@ -692,8 +820,8 @@
 
           </div>
           <script>
-            var swiper = new Swiper('.f4r-box',{
-              autoplay : 3000,
+            var swiper = new Swiper('.f4r-box', {
+              autoplay: 3000,
             });
           </script>
         </div>
@@ -755,8 +883,8 @@
     <!-- f6 友情链接 end-->
 
   </div>
-    <!-- continer end -->
-    <!-- footer -->
+  <!-- continer end -->
+  <!-- footer -->
   <div class="footer">
     <div class="w1200">
       <p>主办：三门峡高新技术产业开发区管理委员会 地址：三门峡高新技术产业开发区创业中心大楼东裙楼二楼</p>
